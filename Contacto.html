@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto</title>
 </head>
 <body>
+  <section id="contacto">
+  <h2>Contacto</h2>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br></br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="number" id="telefono" name="telefono" pattern="[0-9]{10}" required
+           title="Debe contener solo números"><br></br>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required minlength="20"></textarea><br></br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<section>
+  <h2>Datos Registrados</h2>
+  <table border="2">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Teléfono</th>
+         <th>Mensaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AndresFermin22</td>
+        <td>3128293471</td>
+        <td>Pagina bastante informativa</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>Juanito </td>
+        <td>3277556490</td>
+        <td>Se deberia agregar curiosiades como que segun estudios pueden haber 200 razas de gatos</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Datos registrados: 1</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+
+
   
 </body>
 </html>
