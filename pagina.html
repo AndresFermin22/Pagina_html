@@ -3,30 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina Andres O</title>
+  <title>Blog de gatos</title>
 </head>
+
 <header>
-<h1>RAZA DE GATOS</h1>
+  <h1>Blog sobre gatos</h1>
+</header>
 
 <nav>
-
   <ul>
     <li><a href="pagina.html">Inicio</a></li>
     <li><a href="raza_gatos.html">Razas de gatos</a></li>
-    <li><a href="curiosidades_gatos.html">Historia de los gatos</a></li>
+    <li><a href="historia_gatos.html">Historia de los gatos</a></li>
     <li><a href="Curiosidades_gatos.html">Curiosidades gatos</a></li>
     <li><a href="Contacto.html">Contacto</a></li>
   </ul>
-
 </nav>
 
+<main>
+  <article>
+    <h2>Introduccion</h2>
+      <p>En esta pagina podras conocer todo lo relacionado a gatos o a tu gato pudiendo saber la raza, historia de cada gato, curioisades y mi contacto si necesitas alguna informacion adicional o agregar algo a la informacion </p>
+  </article>
+
+  <article>
+    <h2>Informacion sobre el blog</h2>
+      <p>Este blog fue creado para fines informativos conocer mas sobre nuestras mascotas y poder divertirse por todas las maravillas que nos ofrecen nuestros felinos dia a dia</p>
+  </article>
+</main>
+
+<section>
+  <h2>Aprende con nosotros</h2>
+  <img src="razagatos.jpg" alt="Raza de gatos">
+  <p>Un vistazo rapido a las razas de gatos mas famosa</p>
+</section>
+
+<section id="formulario">
+  <h2></h2>
+  
+</section>
+
+<section id="formulario">
+  <fieldset>
+    <legend>Formulario de registro</legend>
+  <p>Permitenos notificarte cuando ocurra alguna noticia en especifica que te interese</p>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required pattern= "[^0-9]" title="Este campo no debe contener números."><br></br> 
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required pattern= "[^0-9]" title="Este campo no debe contener números."><br></br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="number" id="telefono" name="telefono" required pattern="[0-9]{10}" title="10 dígitos"><br></br>
+
+    <label for="correo">Correo electronico:</label>
+    <input type="text" id="correo" name="correo" required><br></br>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+      <option value="">Seleccione</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+    </select><br></br>
+
+    <label for="mascota">Que informacion te gustaria recibir?:</label>
+    <textarea id="mascota" name="mascota" required></textarea><br></br>
+    
+    <button type="submit">Registrar</button>
+    </fieldset>
+     
+  </form>
+</section>
 
 
 
 
 
 
-</header>
+
+
 
 </body>
 </html>
